@@ -1,0 +1,147 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# OnixBuyer — полная конфигурация
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Горячие товары
+hot-items-interval-ticks: 360000
+hot-item-price: 5000.0
+hot-item-max-sell: 5
+hot-items-count: 3
+
+# XP за продажу 1 предмета
+xp-per-item: 1
+
+# XP для каждого уровня
+level-xp:
+  1: 500
+  2: 1500
+  3: 3500
+  4: 7000
+  5: 12000
+  6: 20000
+  7: 32000
+  8: 50000
+  9: 75000
+  10: 100000
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Категории скупщика
+# Каждая категория:
+#   title  — название (поддерживает &-коды)
+#   icon   — иконка (Material)
+#   items  — список предметов: {material: ЦЕНА}
+#
+# Специальная категория "potions" — зелья по типу PotionType
+# ─────────────────────────────────────────────────────────────────────────────
+
+categories:
+
+  undead:
+    title: "&5&lСкупщик нежити"
+    icon: WITHER_SKELETON_SKULL
+    items:
+      ROTTEN_FLESH: 3.0
+      LEATHER: 8.0
+      BONE: 5.0
+      BLAZE_ROD: 20.0
+      PRISMARINE_SHARD: 10.0
+      SLIME_BALL: 6.0
+      MAGMA_CREAM: 12.0
+      PRISMARINE_CRYSTALS: 8.0
+      GHAST_TEAR: 40.0
+      WITHER_SKELETON_SKULL: 500.0
+      SHULKER_SHELL: 150.0
+      SKELETON_SKULL: 80.0
+      CREEPER_HEAD: 120.0
+
+  food:
+    title: "&a&lСкупщик еды"
+    icon: GOLDEN_CARROT
+    items:
+      APPLE: 3.0
+      MELON_SLICE: 2.0
+      SWEET_BERRIES: 3.0
+      GOLDEN_CARROT: 15.0
+      CARROT: 2.0
+      POTATO: 2.0
+      BEETROOT: 2.0
+      WHEAT: 2.0
+      BEEF: 5.0
+      PORKCHOP: 5.0
+      MUTTON: 4.0
+      RABBIT: 4.0
+      CHICKEN: 3.0
+      COD: 3.0
+      COOKED_BEEF: 8.0
+      COOKED_PORKCHOP: 8.0
+      COOKED_MUTTON: 7.0
+      COOKED_CHICKEN: 6.0
+      BREAD: 4.0
+      COOKIE: 2.0
+      CAKE: 20.0
+      PUMPKIN_PIE: 6.0
+
+  farmer:
+    title: "&6&lСкупщик-фермер"
+    icon: WHEAT
+    items:
+      CARROT: 2.0
+      POTATO: 2.0
+      WHEAT: 2.0
+      SUGAR_CANE: 3.0
+      CACTUS: 3.0
+      BEETROOT: 2.0
+      NETHER_WART: 8.0
+      COCOA_BEANS: 5.0
+      OAK_LOG: 4.0
+      BIRCH_LOG: 4.0
+      SPRUCE_LOG: 4.0
+      JUNGLE_LOG: 4.0
+      ACACIA_LOG: 4.0
+      DARK_OAK_LOG: 4.0
+      MANGROVE_LOG: 5.0
+      CHERRY_LOG: 5.0
+
+  gems:
+    title: "&b&lСкупщик драгоценностей"
+    icon: DIAMOND
+    items:
+      COAL: 2.0
+      AMETHYST_SHARD: 12.0
+      EMERALD: 100.0
+      LAPIS_LAZULI: 5.0
+      DIAMOND: 80.0
+      COPPER_INGOT: 8.0
+      IRON_INGOT: 15.0
+      GOLD_INGOT: 25.0
+      NETHERITE_SCRAP: 200.0
+      REDSTONE: 4.0
+
+  potions:
+    title: "&d&lСкупщик зелий"
+    icon: POTION
+    # Зелья задаются по PotionType
+    potions:
+      HEALING: 30.0
+      STRONG_HEALING: 60.0
+      REGENERATION: 40.0
+      LONG_REGENERATION: 70.0
+      STRENGTH: 35.0
+      LONG_STRENGTH: 60.0
+      STRONG_STRENGTH: 70.0
+      SWIFTNESS: 20.0
+      LONG_SWIFTNESS: 35.0
+      STRONG_SWIFTNESS: 40.0
+      FIRE_RESISTANCE: 25.0
+      LONG_FIRE_RESISTANCE: 45.0
+      NIGHT_VISION: 20.0
+      LONG_NIGHT_VISION: 35.0
+      INVISIBILITY: 30.0
+      LONG_INVISIBILITY: 50.0
+      WATER_BREATHING: 25.0
+      LONG_WATER_BREATHING: 45.0
+      LEAPING: 20.0
+      LONG_LEAPING: 35.0
+      STRONG_LEAPING: 40.0
+      SLOW_FALLING: 25.0
+      LONG_SLOW_FALLING: 45.0
