@@ -1,0 +1,17 @@
+name: OnixBuyer
+version: 1.0.0
+main: ru.onixmine.onixbuyer.OnixBuyerPlugin
+api-version: '1.21'
+depend: [Vault]
+description: Скупщик ресурсов OnixMine
+
+commands:
+  buyer:
+    description: Открыть скупщика
+    aliases: [onixbuyer, obuyer]
+    usage: /buyer [reload]
+
+permissions:
+  onixbuyer.reload:
+    description: Перезагрузить конфиг скупщика
+    default: op
